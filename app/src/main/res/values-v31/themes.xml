@@ -15,5 +15,6 @@
         <!-- Customize your theme here. -->
         <item name="android:windowSplashScreenBackground">@color/true_blue</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_unit_converter</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
     </style>
 </resources>

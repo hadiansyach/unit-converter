@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Unit Converter</string>
+    <string name="weight_plcholder">Weight</string>
+    <string name="from">From :</string>
+    <string name="to">To :</string>
+    <string name="input_nilai">Enter Numbers</string>
+    <string name="kilogram">kilogram</string>
+    <string name="hektogram">hektogram</string>
+    <string name="dekagram">dekagram</string>
+    <string name="gram">gram</string>
+    <string name="desigram">desigram</string>
+    <string name="centigram">centigram</string>
+    <string name="miligram">miligram</string>
 </resources>

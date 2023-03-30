@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/to"
+        app:layout_constraintStart_toStartOf="@+id/toSatuan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fromSatuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtFrom"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
+
+    <TextView
+        android:id="@+id/toSatuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/editNumberTo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTo" />
+
+    <EditText
+        android:id="@+id/editNumberFrom"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/fromSatuan"
+        app:layout_constraintTop_toBottomOf="@+id/fromSatuan" />
+
+    <EditText
+        android:id="@+id/editNumberTo"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toSatuan" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFrom"
+        android:layout_width="160dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editNumberTo"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberTo">
+
+        <RadioButton
+            android:id="@+id/radioFromKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram" />
+
+        <RadioButton
+            android:id="@+id/radioFromHg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hektogram" />
+
+        <RadioButton
+            android:id="@+id/radioFromDag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dekagram" />
+
+        <RadioButton
+            android:id="@+id/radioFromGr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gram" />
+
+        <RadioButton
+            android:id="@+id/radioFromDg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desigram" />
+
+        <RadioButton
+            android:id="@+id/radioFromCg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/centigram" />
+
+        <RadioButton
+            android:id="@+id/radioFromMg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miligram" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTo"
+        android:layout_width="160dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/editNumberFrom"
+        app:layout_constraintTop_toBottomOf="@+id/editNumberFrom">
+
+        <RadioButton
+            android:id="@+id/radioToKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram" />
+
+        <RadioButton
+            android:id="@+id/radioToHg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hektogram" />
+
+        <RadioButton
+            android:id="@+id/radioToDag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dekagram" />
+
+        <RadioButton
+            android:id="@+id/radioToGr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gram" />
+
+        <RadioButton
+            android:id="@+id/radioToDg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desigram" />
+
+        <RadioButton
+            android:id="@+id/radioToCg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/centigram" />
+
+        <RadioButton
+            android:id="@+id/radioToMg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miligram" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

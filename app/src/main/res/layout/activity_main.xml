@@ -6,12 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:elevation="5dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:labelFor="@id/weightButton"-->
+<!--        android:text="@string/weight_plcholder"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/weightButton"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/weightButton"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/weightButton" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/weightButton"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:elevation="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_weight"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/buttonWeight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableTop="@drawable/ic_weight"
+        android:drawableTint="#FEFEFE"
+        android:elevation="20dp"
+        android:text="@string/weight_plcholder"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
