@@ -11,4 +11,11 @@
     <string name="desigram">desigram</string>
     <string name="centigram">centigram</string>
     <string name="miligram">miligram</string>
+    <string name="convert">Convert</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
 </resources>

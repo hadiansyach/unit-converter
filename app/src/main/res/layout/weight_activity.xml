@@ -19,10 +19,9 @@
         android:id="@+id/txtTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/to"
         app:layout_constraintStart_toStartOf="@+id/toSatuan"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/txtFrom" />
 
     <TextView
         android:id="@+id/fromSatuan"
@@ -67,9 +66,60 @@
         android:id="@+id/radioGroupFrom"
         android:layout_width="160dp"
         android:layout_height="366dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/editNumberFrom"
+        app:layout_constraintTop_toBottomOf="@+id/convert">
+
+        <RadioButton
+            android:id="@+id/radioToKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram" />
+
+        <RadioButton
+            android:id="@+id/radioToHg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hektogram" />
+
+        <RadioButton
+            android:id="@+id/radioToDag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dekagram" />
+
+        <RadioButton
+            android:id="@+id/radioToGr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gram" />
+
+        <RadioButton
+            android:id="@+id/radioToDg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/desigram" />
+
+        <RadioButton
+            android:id="@+id/radioToCg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/centigram" />
+
+        <RadioButton
+            android:id="@+id/radioToMg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miligram" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTo"
+        android:layout_width="160dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/editNumberTo"
-        app:layout_constraintTop_toBottomOf="@+id/editNumberTo">
+        app:layout_constraintTop_toBottomOf="@+id/convert">
 
         <RadioButton
             android:id="@+id/radioFromKg"
@@ -114,55 +164,14 @@
             android:text="@string/miligram" />
     </RadioGroup>
 
-    <RadioGroup
-        android:id="@+id/radioGroupTo"
-        android:layout_width="160dp"
-        android:layout_height="366dp"
-        android:layout_marginTop="16dp"
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/convert"
+        app:layout_constraintEnd_toEndOf="@+id/editNumberTo"
         app:layout_constraintStart_toStartOf="@+id/editNumberFrom"
-        app:layout_constraintTop_toBottomOf="@+id/editNumberFrom">
-
-        <RadioButton
-            android:id="@+id/radioToKg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kilogram" />
-
-        <RadioButton
-            android:id="@+id/radioToHg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hektogram" />
-
-        <RadioButton
-            android:id="@+id/radioToDag"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/dekagram" />
-
-        <RadioButton
-            android:id="@+id/radioToGr"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/gram" />
-
-        <RadioButton
-            android:id="@+id/radioToDg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/desigram" />
-
-        <RadioButton
-            android:id="@+id/radioToCg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/centigram" />
-
-        <RadioButton
-            android:id="@+id/radioToMg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/miligram" />
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/editNumberFrom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
